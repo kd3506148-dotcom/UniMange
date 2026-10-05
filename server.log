@@ -1,0 +1,24 @@
+
+> campushub-server@1.0.0 dev
+> node --watch server.js
+
+[Database] Notice: Direct connection to mongodb://127.0.0.1:27017/campushub failed (connect ECONNREFUSED 127.0.0.1:27017).
+[Database] Initializing development in-memory MongoDB engine...
+Starting the MongoMemoryServer Instance failed, enable debug log for more information. Error:
+ UnexpectedCloseError: Instance closed unexpectedly with code "3221225781" and signal "null"
+Exit Code is large, commonly meaning that vc_redist is not installed, the latest vc_redist can be found at https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+    at MongoInstance.closeHandler (C:\Users\user\Desktop\University Management System\server\node_modules\mongodb-memory-server-core\lib\util\MongoInstance.js:302:58)
+    at ChildProcess.emit (node:events:519:28)
+    at maybeClose (node:internal/child_process:1101:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:519:28)
+    at Pipe.<anonymous> (node:net:347:12)
+[Database] In-memory fallback unavailable on this environment. Running in degraded mode without MongoDB persistence.
+[Database] Fallback error: Instance closed unexpectedly with code "3221225781" and signal "null"
+Exit Code is large, commonly meaning that vc_redist is not installed, the latest vc_redist can be found at https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+====================================================
+ CampusHub Server is running on port 5000
+ Environment : development
+ Health API  : http://localhost:5000/api/health
+====================================================
+[0mGET /api/health [32m200[0m 11.880 ms - 379[0m
